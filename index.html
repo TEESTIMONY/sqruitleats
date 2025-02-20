@@ -3,94 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoodEats Auto Doordash</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #1c1f2e;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        .container {
-            max-width: 400px;
-            margin: auto;
-            background: #2c2f3e;
-            padding: 20px;
-            border-radius: 10px;
-        }
-        .header {
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .discount {
-            color: #1e90ff;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-        .btn-group {
-            display: flex;
-            justify-content: center;
-            margin: 15px 0;
-        }
-        .btn {
-            flex: 1;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-        }
-        .active {
-            background-color: #4a90e2;
-            color: white;
-        }
-        .input-group {
-            text-align: left;
-            margin-bottom: 10px;
-        }
-        input {
-            width: 100%;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-        }
-        .submit-btn {
-            width: 100%;
-            background: #d9534f;
-            color: white;
-            padding: 12px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-    </style>
+    <title>Delivery Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <div class="header">Accepting subtotals from $20 to $30</div>
-        <p class="discount">Free Delivery • 40% OFF</p>
-        <div class="btn-group">
-            <button class="btn active">Delivery</button>
-            <button class="btn">Pickup</button>
+        <button class="credits-btn">💳 Credits</button>
+        <div class="extra-container">
+            <div class="logo">
+                <img src="doordash-logo.png" alt="Logo">
+            </div>
+            <h2>Accepting subtotals from $20 to $30</h2>
+            <p class="small-text">(anything over $27 subtotal is charged at-cost)</p>
+            <p class="promo"><a href="#">Free Delivery</a> • 40% OFF</p>
+            <p class="payment-method">Accepting Zelle and Crypto</p>
+    
+            <div class="tabs">
+                <button class="tab active">Delivery</button>
+                <button class="tab">Pickup</button>
+            </div>
+            <form>
+                <label for="address">Delivery Address *</label>
+                <input type="text" id="address" placeholder="Delivery Address">
+    
+                <label for="apartment">Apartment/Suite #</label>
+                <input type="text" id="apartment" placeholder="Apartment/Suite #">
+    
+                <label for="instructions">Delivery Instructions</label>
+                <input type="text" id="instructions" placeholder="Delivery Instructions">
+                
+                <div class="details-label">
+                    <label for="details">Name *</label>
+                    <label for="details">Phone Number *</label>
+                </div>
+                <div class="details">
+                    <input type="text" id="details" placeholder="Enter your name">
+                    <input type="text" id="details" placeholder="Phone Number">
+                </div>
+    
+                <button type="submit" class="submit-btn">SUBMIT</button>
+            </form>
         </div>
-        <div class="input-group">
-            <label>Delivery Address *</label>
-            <input type="text" placeholder="Delivery Address">
-        </div>
-        <div class="input-group">
-            <label>Apartment/Suite #</label>
-            <input type="text" placeholder="Apartment/Suite #">
-        </div>
-        <div class="input-group">
-            <label>Delivery Instructions</label>
-            <input type="text" placeholder="Delivery Instructions">
-        </div>
-        <div class="input-group">
-            <label>Group Order Link *</label>
-            <input type="text" placeholder="Group Order">
-        </div>
-        <button class="submit-btn">SUBMIT</button>
+        
     </div>
 </body>
 </html>
