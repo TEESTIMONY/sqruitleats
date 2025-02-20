@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit Funds</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="back-btn">←</button>
+    <div class="container">        
+        <div class="card">
+            <h2>Deposit Funds</h2>
+            <p class="balance">Current Balance: <span>$0.00</span></p>
+
+            <label for="currency">Select Currency</label>
+            <select id="currency">
+                <option>Select a cryptocurrency</option>
+                <option>Bitcoin (BTC)</option>
+                <option>Ethereum (ETH)</option>
+                <option>USDT (Tether)</option>
+                <option>Solana (SOL)</option>
+            </select>
+
+            <label for="amount">Amount (USD) <span class="min-amount">(Minimum $5)</span></label>
+            <input type="number" id="amount" placeholder="Enter amount in USD">
+
+            <button class="deposit-btn" disabled>Generate Deposit Address</button>
+        </div>
+    </div>
+</body>
+</html>
