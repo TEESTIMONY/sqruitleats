@@ -4,46 +4,60 @@ body {
     color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
 }
 
 .container {
-    text-align: center;
+    text-align: left;
     width: 100%;
-    max-width: 350px;
+    max-width: 370px;
+    display: block;
+    background-color: none;
+    justify-content: center;
+    height: 400px;
+    margin-top: 10vh;
+
+
 }
 
-.back-btn {
-    background: none;
-    display: flex;
-    border: none;
-    color: white;
-    font-size: 20px;
+.bx{
+    font-size: 25px;
+    color: #fff;
     cursor: pointer;
     
+}
+
+.bx ::after{
+    background:#fff;
 }
 
 .card {
     background-color: #1b2433;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #2a3b57;
+    border: 1px solid #fff;
     text-align: left;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+
 }
 
 h2 {
     text-align: center;
-    font-size: 18px;
-    margin-bottom: 5px;
+    font-size: 25px;
+    margin-bottom: 2px;
+    font-weight: bold;
 }
+
+
 
 .balance {
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
     color: #aaa;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 }
 
 .balance span {
@@ -55,22 +69,31 @@ label {
     font-size: 14px;
     display: block;
     margin-top: 10px;
+    font-weight: bold;
 }
+
+
 
 .min-amount {
     font-size: 12px;
     color: #aaa;
+    width: 100px;
 }
 
 select, input {
     width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #2a3b57;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #4f83ff;
     background-color: #2a3b57;
     color: white;
-    margin-top: 5px;
+    margin-top: 15px;
     font-size: 14px;
+    font-weight: bold;
+}
+
+#amount{
+    width: 93%;
 }
 
 input::placeholder {
@@ -84,10 +107,9 @@ input::placeholder {
     border: none;
     padding: 12px;
     border-radius: 5px;
-    cursor: not-allowed;
+    cursor: pointer;
     margin-top: 15px;
+    font-weight: bold;
 }
 
-#currency{
-    background: red;
-}
+
