@@ -82,13 +82,13 @@ p{
 .tab {
     background-color: #4f83ff;
     border: none;
-    padding: 15px 15px;
+    padding: 12px 15px;
     width: 150px;
     color: white;
     cursor: pointer;
     border-radius: 6px;
-    margin: 0 5px;
-    font-weight: bold;
+    margin: 0 3px;
+    font-weight: bold
     font-size: 15px;
 }
 
